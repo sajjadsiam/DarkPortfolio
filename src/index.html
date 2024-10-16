@@ -1,0 +1,666 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Sajjad Siam</title>
+</head>
+<body>
+ 
+
+                      <! -- Responsive Navbar -->
+
+<nav class="bg-gray-900 text-white py-4 px-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="#" class="text-2xl font-bold text-yellow-400">Sajjad Siam</a>
+    <button id="menu-btn" class="text-yellow-400 md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    
+  
+    <ul id="menu" class="hidden md:flex space-x-8">
+      <li><a href="#home" class="hover:text-yellow-400 transition duration-300">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-400 transition duration-300">About</a></li>
+      <li><a href="#skills" class="hover:text-yellow-400 transition duration-300">Skills</a></li>
+      <li><a href="#experience" class="hover:text-yellow-400 transition duration-300">Experience</a></li>
+
+
+      <li class="relative">
+        <button id="more-btn" class="hover:text-yellow-400 flex justify-between items-center space-x-1 gap-1">
+          More
+          <svg id="more-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <ul id="more-menu" class="hidden bg-gray-900 text-white absolute mt-2 py-2 space-y-2 rounded shadow-lg">
+          <li><a href="#blog" class="block px-4 py-2 hover:bg-gray-700">Blog</a></li>
+          <li><a href="#portfolio" class="block px-4 py-2 hover:bg-gray-700">Portfolio</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Contact</a></li>
+    </ul>
+
+
+    <a href="#hire-me" class="hidden md:inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out">
+      Hire Me
+    </a>
+  </div>
+
+
+  <ul id="mobile-menu" class="hidden bg-gray-900 text-white space-y-4 mt-4 py-4 px-4 md:hidden">
+    <li><a href="#home" class="block hover:text-yellow-400">Home</a></li>
+    <li><a href="#about" class="block hover:text-yellow-400">About</a></li>
+    <li><a href="#skills" class="block hover:text-yellow-400">Skills</a></li>
+    <li><a href="#experience" class="block hover:text-yellow-400">Experience</a></li>
+    
+    <li class="block">
+      <button id="dropdown-btn" class="w-full text-left hover:text-yellow-400 flex justify-between items-center">
+        More
+        <svg id="dropdown-icon" class="w-4 h-4 ml-2 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <ul id="dropdown-menu" class="hidden bg-gray-900 text-white space-y-2 mt-2 py-2 rounded shadow-lg">
+        <li><a href="#blog" class="block px-4 py-2 hover:bg-gray-700">Blog</a></li>
+        <li><a href="#portfolio" class="block px-4 py-2 hover:bg-gray-700">Portfolio</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#contact" class="block hover:text-yellow-400">Contact</a></li>
+
+    <li><a href="#hire-me" class="block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out text-center">
+      Hire Me
+    </a></li>
+  </ul>
+</nav>
+
+
+
+
+
+                              <! -- Home Section -->
+
+    <section class="bg-gradient-to-r from-gray-900 via-black to-gray-800 py-12 px-16">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+        
+          <div class="relative w-full md:w-1/2 mb-10 md:mb-0">
+            <div class="relative p-4">
+              <img src="img/dark.jpg" alt="Profile Picture" class="rounded-xl shadow-lg object-cover w-full h-full">
+         
+              <div class="absolute top-0 left-0 w-full h-full bg-yellow-500 opacity-30 mix-blend-multiply rounded-xl"></div>
+
+              <div class="absolute -top-4 -left-4 w-16 h-16 bg-yellow-500 rounded-full"></div>
+            </div>
+          </div>
+      
+       
+          <div class="w-full md:w-1/2 pl-0 md:pl-10 text-white text-center md:text-left">
+            <h1 class="text-6xl font-extrabold mb-4">I'm <span class="text-yellow-400">Sajjad Siam.</span></h1>
+            <p class="text-3xl font-semibold mb-4">Web Designer</p>
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">I'm a Tailwind-based web designer & front-end developer focused on crafting clean & user-friendly experiences. I'm passionate about building excellent software that improves the lives of those around me.</p>
+            
+           
+            <a href="#" class="relative inline-block bg-gray-900 text-white font-bold py-3 pl-10 pr-12 rounded-full border-2 border-yellow-500 overflow-hidden group mt-8">
+              <span class="absolute inset-0 bg-yellow-500 transition-all duration-300 ease-linear transform scale-x-0 group-hover:scale-x-100 origin-right"></span>
+              
+              <span class="relative flex items-center space-x-4 z-10">
+                <span>More About Me</span>
+            
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+
+
+                          <! -- About Me Section -->
+<section class="bg-gray-900 text-white py-12 px-16">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h2 class="text-4xl font-bold text-white mb-8">Personal Infos</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+        <li><strong class="text-gray-300">First Name:</strong> <span class="font-semibold text-white">Sajjad</span></li>
+        <li><strong class="text-gray-300">Last Name:</strong> <span class="font-semibold text-white">Siam</span></li>
+        <li><strong class="text-gray-300">Age:</strong> <span class="font-semibold text-white">21 Years</span></li>
+        <li><strong class="text-gray-300">Nationality:</strong> <span class="font-semibold text-white">Bangladeshi</span></li>
+        <li><strong class="text-gray-300">Freelance:</strong> <span class="font-semibold text-green-500">Available</span></li>
+        <li><strong class="text-gray-300">Address:</strong> <span class="font-semibold text-white">Rajshahi</span></li>
+        <li><strong class="text-gray-300">Phone:</strong> <span class="font-semibold text-white">+8801787912976</span></li>
+        <li><strong class="text-gray-300">Email:</strong> <span class="font-semibold text-white">sajjadsiam@yahoo.com</span></li>
+        <li><strong class="text-gray-300">Skype:</strong> <span class="font-semibold text-white">sajjad.siam</span></li>
+        <li><strong class="text-gray-300">Languages:</strong> <span class="font-semibold text-white">Bangla, English</span></li>
+      </ul>
+
+      <a href="#" class="relative inline-block bg-gray-900 text-white font-bold py-3 pl-10 pr-12 rounded-full border-2 border-yellow-500 overflow-hidden group mt-8">
+        <span class="absolute inset-0 bg-yellow-500 transition-all duration-300 ease-linear transform scale-x-0 group-hover:scale-x-100 origin-right"></span>
+        
+        <span class="relative flex items-center space-x-4 z-10">
+          <span>Download CV</span>
+      
+        </span>
+      </a>
+
+    </div>
+
+    <div class="grid grid-cols-2 gap-8">
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+        <p class="text-4xl font-bold text-yellow-400">12+</p>
+        <p class="mt-2 text-gray-300">Years of Experience</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+        <p class="text-4xl font-bold text-yellow-400">97+</p>
+        <p class="mt-2 text-gray-300">Completed Projects</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+        <p class="text-4xl font-bold text-yellow-400">81+</p>
+        <p class="mt-2 text-gray-300">Happy Customers</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+        <p class="text-4xl font-bold text-yellow-400">53+</p>
+        <p class="mt-2 text-gray-300">Awards Won</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+                                          <! -- My Portfolio Section -->
+<section class="bg-black text-white py-16 px-16">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-8">My <span class="text-yellow-400">Portfolio</span></h2>
+    <div class="flex justify-center space-x-8 mb-12">
+      <a href="#" class="text-yellow-400 font-bold filter-link" data-category="all">All</a>
+      <a href="#" class="text-gray-300 hover:text-yellow-400 filter-link" data-category="logo">Logo</a>
+      <a href="#" class="text-gray-300 hover:text-yellow-400 filter-link" data-category="video">Video</a>
+      <a href="#" class="text-gray-300 hover:text-yellow-400 filter-link" data-category="graphic-design">Graphic Design</a>
+      <a href="#" class="text-gray-300 hover:text-yellow-400 filter-link" data-category="mockup">Mockup</a>
+    </div>
+
+ 
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 portfolio-grid">
+      <div class="relative group portfolio-item" data-category="logo">
+        <img src="img/project1.jpg" alt="Portfolio Image" class="rounded-lg object-cover w-full h-64 transition-transform transform group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-bold">Logo Design 1</span>
+        </div>
+      </div>
+      
+      <div class="relative group portfolio-item" data-category="video">
+        <img src="img/project2.jpg" alt="Portfolio Image" class="rounded-lg object-cover w-full h-64 transition-transform transform group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-bold">Video Project 1</span>
+        </div>
+      </div>
+
+      <div class="relative group portfolio-item" data-category="graphic-design">
+        <img src="img/project3.jpg" alt="Portfolio Image" class="rounded-lg object-cover w-full h-64 transition-transform transform group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-bold">Graphic Design 1</span>
+        </div>
+      </div>
+
+      <div class="relative group portfolio-item" data-category="mockup">
+        <img src="img/project4.jpg" alt="Portfolio Image" class="rounded-lg object-cover w-full h-64 transition-transform transform group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-bold">Mockup Design 1</span>
+        </div>
+      </div>
+
+      <div class="relative group portfolio-item" data-category="logo">
+        <img src="img/project5.jpg" alt="Portfolio Image" class="rounded-lg object-cover w-full h-64 transition-transform transform group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-bold">Logo Design 2</span>
+        </div>
+      </div>
+
+      <div class="relative group portfolio-item" data-category="video">
+        <img src="img/project6.jpg" alt="Portfolio Image" class="rounded-lg object-cover w-full h-64 transition-transform transform group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white font-bold">Video Project 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+                                      <! -- My Skills Section -->
+<section class="bg-gray-900 text-white py-16 px-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-12">My <span class="text-yellow-400">Skills</span></h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="flex flex-col items-center">
+        <div class="relative w-24 h-24">
+          <svg class="absolute top-0 left-0 w-full h-full transform rotate-90">
+            <circle cx="50%" cy="50%" r="45%" stroke="gray" stroke-width="8" fill="transparent" />
+            <circle cx="50%" cy="50%" r="45%" stroke="currentColor" class="text-yellow-500" stroke-width="8" fill="transparent" stroke-dasharray="283" stroke-dashoffset="212"></circle>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-xl font-bold">25%</div>
+        </div>
+        <p class="mt-4">HTML</p>
+      </div>
+
+    
+      <div class="flex flex-col items-center">
+        <div class="relative w-24 h-24">
+          <svg class="absolute top-0 left-0 w-full h-full transform rotate-90">
+            <circle cx="50%" cy="50%" r="45%" stroke="gray" stroke-width="8" fill="transparent" />
+            <circle cx="50%" cy="50%" r="45%" stroke="currentColor" class="text-yellow-500" stroke-width="8" fill="transparent" stroke-dasharray="283" stroke-dashoffset="31"></circle>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-xl font-bold">89%</div>
+        </div>
+        <p class="mt-4">JavaScript</p>
+      </div>
+
+
+      <div class="flex flex-col items-center">
+        <div class="relative w-24 h-24">
+          <svg class="absolute top-0 left-0 w-full h-full transform rotate-90">
+            <circle cx="50%" cy="50%" r="45%" stroke="gray" stroke-width="8" fill="transparent" />
+            <circle cx="50%" cy="50%" r="45%" stroke="currentColor" class="text-yellow-500" stroke-width="8" fill="transparent" stroke-dasharray="283" stroke-dashoffset="84"></circle>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-xl font-bold">70%</div>
+        </div>
+        <p class="mt-4">CSS</p>
+      </div>
+
+     
+      <div class="flex flex-col items-center">
+        <div class="relative w-24 h-24">
+          <svg class="absolute top-0 left-0 w-full h-full transform rotate-90">
+            <circle cx="50%" cy="50%" r="45%" stroke="gray" stroke-width="8" fill="transparent" />
+            <circle cx="50%" cy="50%" r="45%" stroke="currentColor" class="text-yellow-500" stroke-width="8" fill="transparent" stroke-dasharray="283" stroke-dashoffset="96"></circle>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-xl font-bold">66%</div>
+        </div>
+        <p class="mt-4">Rest API</p>
+      </div>
+
+    
+      <div class="flex flex-col items-center">
+        <div class="relative w-24 h-24">
+          <svg class="absolute top-0 left-0 w-full h-full transform rotate-90">
+            <circle cx="50%" cy="50%" r="45%" stroke="gray" stroke-width="8" fill="transparent" />
+            <circle cx="50%" cy="50%" r="45%" stroke="currentColor" class="text-yellow-500" stroke-width="8" fill="transparent" stroke-dasharray="283" stroke-dashoffset="14"></circle>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-xl font-bold">95%</div>
+        </div>
+        <p class="mt-4">Django</p>
+      </div>
+
+    
+      <div class="flex flex-col items-center">
+        <div class="relative w-24 h-24">
+          <svg class="absolute top-0 left-0 w-full h-full transform rotate-90">
+            <circle cx="50%" cy="50%" r="45%" stroke="gray" stroke-width="8" fill="transparent" />
+            <circle cx="50%" cy="50%" r="45%" stroke="currentColor" class="text-yellow-500" stroke-width="8" fill="transparent" stroke-dasharray="283" stroke-dashoffset="141"></circle>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-xl font-bold">50%</div>
+        </div>
+        <p class="mt-4">Tailwind CSS</p>
+      </div>
+
+   
+      <div class="flex flex-col items-center">
+        <div class="relative w-24 h-24">
+          <svg class="absolute top-0 left-0 w-full h-full transform rotate-90">
+            <circle cx="50%" cy="50%" r="45%" stroke="gray" stroke-width="8" fill="transparent" />
+            <circle cx="50%" cy="50%" r="45%" stroke="currentColor" class="text-yellow-500" stroke-width="8" fill="transparent" stroke-dasharray="283" stroke-dashoffset="99"></circle>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-xl font-bold">65%</div>
+        </div>
+        <p class="mt-4">Next.JS</p>
+      </div>
+
+
+      <div class="flex flex-col items-center">
+        <div class="relative w-24 h-24">
+          <svg class="absolute top-0 left-0 w-full h-full transform rotate-90">
+            <circle cx="50%" cy="50%" r="45%" stroke="gray" stroke-width="8" fill="transparent" />
+            <circle cx="50%" cy="50%" r="45%" stroke="currentColor" class="text-yellow-500" stroke-width="8" fill="transparent" stroke-dasharray="283" stroke-dashoffset="155"></circle>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-xl font-bold">45%</div>
+        </div>
+        <p class="mt-4">React</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+                                  <! -- My Blog Section -->
+<section class="bg-black text-white py-16 px-16">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">My <span class="text-yellow-400">Blog</span></h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <img src="img/blog1.jpg" alt="Blog Image" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 hover:text-yellow-400 transition-colors">How to Own Your Audience by Creating an Email List</h3>
+          <p class="text-gray-400">Tomfoolery crikey bits and bobs brilliant bamboozled down the pub amongst brolly hanky panky, cack b...</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <img src="img/blog2.jpg" alt="Blog Image" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 hover:text-yellow-400 transition-colors">Top 10 Toolkits for Deep Learning in 2022</h3>
+          <p class="text-gray-400">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <img src="img/blog3.jpg" alt="Blog Image" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 hover:text-yellow-400 transition-colors">Everything You Need to Know About Web Accessibility</h3>
+          <p class="text-gray-400">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol...</p>
+        </div>
+      </div>
+
+       <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <img src="img/blog4.jpg" alt="Blog Image" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 hover:text-yellow-400 transition-colors">How to Inject Humor & Comedy Into Your Brand</h3>
+          <p class="text-gray-400">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+       <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <img src="img/blog5.jpg" alt="Blog Image" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 hover:text-yellow-400 transition-colors">Women in Web Design: How To Achieve Success</h3>
+          <p class="text-gray-400">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol...</p>
+        </div>
+      </div>
+
+       <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <img src="img/blog6.jpg" alt="Blog Image" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 hover:text-yellow-400 transition-colors">Evergreen versus topical content: An overview</h3>
+          <p class="text-gray-400">Still ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+                                <! -- Experience & Education Section start here-->
+
+<section class="bg-gray-900 text-white py-16 px-16">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">Experience & <span class="text-yellow-400">Education</span></h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class=" pl-10">
+        
+        <p class="text-gray-400 mb-1">2021 - Present</p>
+        <h3 class="text-2xl font-bold">Web Developer <span class="text-yellow-400">— Youtube</span></h3>
+        <p class="text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipiscing elit.</p>
+      </div>
+
+      <div class=" pl-10">
+       
+        <p class="text-gray-400 mb-1">2015</p>
+        <h3 class="text-2xl font-bold">Engineering Degree <span class="text-yellow-400">— X University of Engineering & Technology </span></h3>
+        <p class="text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipiscing elit.</p>
+      </div>
+      <div class="pl-10">
+        <p class="text-gray-400 mb-1">2013 - 2018</p>
+        <h3 class="text-2xl font-bold">UI/UX Designer <span class="text-yellow-400">— Lorem</span></h3>
+        <p class="text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur eiusmod tempor incididunt.</p>
+      </div>
+
+      <div class="pl-10">
+        <p class="text-gray-400 mb-1">2012</p>
+        <h3 class="text-2xl font-bold">Master Degree <span class="text-yellow-400">— X University</span></h3>
+        <p class="text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur eiusmod dolore tempor incididunt ut labore.</p>
+      </div>
+
+
+      <div class=" pl-10">
+        <p class="text-gray-400 mb-1">2005 - 2013</p>
+        <h3 class="text-2xl font-bold">Consultant <span class="text-yellow-400">— Videohive</span></h3>
+        <p class="text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut laboreconsectetur elit.</p>
+      </div>
+
+      <div class=" pl-10">
+        <p class="text-gray-400 mb-1">2009</p>
+        <h3 class="text-2xl font-bold">Bachelor Degree <span class="text-yellow-400">— X High School</span></h3>
+        <p class="text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut laboreconsectetur elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+                              <! -- Get in Touch Start Here -->
+
+      <section class="bg-black text-white py-16 px-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <div>
+            <h2 class="text-4xl font-bold mb-6">Get in <span class="text-yellow-400">Touch</span></h2>
+            <p class="mb-6">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4.434 8-10c0-5-4-8-8-8S4 7 4 12c0 5.566 8 10 8 10z"></path>
+                </svg>
+                <p>Talaimari, Rajshahi, Bangladesh</p>
+              </div>
+      
+              <div class="flex items-center space-x-4">
+                <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4-4m-4 4l4 4"></path>
+                </svg>
+                <p>sajjadsiam@yahoo.com</p>
+              </div>
+      
+              <div class="flex items-center space-x-4">
+                <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a6 6 0 0111 0v10a6 6 0 01-11 0V10zm2-4a6 6 0 0011 0"></path>
+                </svg>
+                <p>+8801787 912976</p>
+              </div>
+            </div>
+      
+            <div class="flex space-x-4 mt-6">
+              <a href="#" class="text-yellow-400 hover:text-yellow-500">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="text-yellow-400 hover:text-yellow-500">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-yellow-400 hover:text-yellow-500">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="text-yellow-400 hover:text-yellow-500">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </div>
+          </div>
+      
+
+          <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+            <form>
+              <div class="mb-4">
+                <input type="text" placeholder="Your Name" class="w-full px-4 py-2 bg-gray-800 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-500">
+              </div>
+              <div class="mb-4">
+                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 bg-gray-800 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-500">
+              </div>
+              <div class="mb-4">
+                <input type="text" placeholder="Your Subject" class="w-full px-4 py-2 bg-gray-800 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-500">
+              </div>
+              <div class="mb-4">
+                <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 bg-gray-800 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+              </div>
+
+              <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+
+
+                               <! -- Footer Section start here -->
+
+<footer class="bg-gray-900 text-gray-400 py-12 px-16">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div>
+      <h3 class="text-xl font-bold text-white mb-4">About Me</h3>
+        I'm a Tailwind-based web designer & front-end developer focused on crafting clean & user-friendly experiences. I'm passionate about building excellent software that improves the lives of those around me.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#home" class="hover:text-yellow-400 transition duration-300">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-400 transition duration-300">About</a></li>
+        <li><a href="#skills" class="hover:text-yellow-400 transition duration-300">Skills</a></li>
+        <li><a href="#experience" class="hover:text-yellow-400 transition duration-300">Experience</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold text-white mb-4">Contact Info</h3>
+      <ul class="space-y-2">
+        <li class="flex items-center space-x-2">
+          <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4-4m-4 4l4 4m4-8V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
+          <span>sajjadsiam@yahoo.com</span>
+        </li>
+        <li class="flex items-center space-x-2">
+          <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a6 6 0 0111 0v10a6 6 0 01-11 0V10zm2-4a6 6 0 0011 0"></path></svg>
+          <span>+8801787 912976</span>
+        </li>
+        <li class="flex items-center space-x-2">
+          <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4.434 8-10c0-5-4-8-8-8S4 7 4 12c0 5.566 8 10 8 10z"></path></svg>
+          <span>123 Talaimari, Rajshahi</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container mx-auto text-center mt-8">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="#" class="text-yellow-500 hover:text-yellow-600 transition duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.723 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.379 4.482A13.942 13.942 0 011.671 3.149a4.916 4.916 0 001.523 6.573 4.903 4.903 0 01-2.228-.616v.062a4.916 4.916 0 003.946 4.818 4.902 4.902 0 01-2.224.084 4.917 4.917 0 004.588 3.417 9.867 9.867 0 01-7.29 2.03A13.929 13.929 0 007.548 21c9.056 0 14.01-7.5 14.01-14.01 0-.214-.005-.426-.015-.637A10.02 10.02 0 0024 4.557z"></path></svg>
+      </a>
+      <a href="#" class="text-yellow-500 hover:text-yellow-600 transition duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.633 3.485a1.93 1.93 0 00-1.354-.562h-12.4a1.93 1.93 0 00-1.354.562 1.93 1.93 0 00-.563 1.354v12.4a1.93 1.93 0 00.563 1.354c.36.362.857.562 1.354.562h12.4a1.93 1.93 0 001.354-.562 1.93 1.93 0 00.563-1.354v-12.4a1.93 1.93 0 00-.563-1.354zM10 16.283v-7.755l7.556 3.878-7.556 3.877z"></path></svg>
+      </a>
+      <a href="#" class="text-yellow-500 hover:text-yellow-600 transition duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c-5.46 0-9.855 4.395-9.855 9.856 0 5.46 4.395 9.855 9.855 9.855s9.856-4.395 9.856-9.855c0-5.46-4.396-9.856-9.856-9.856zm0 17.8c-4.39 0-7.957-3.567-7.957-7.957 0-4.39 3.567-7.956 7.957-7.956 4.39 0 7.957 3.566 7.957 7.956 0 4.39-3.567 7.957-7.957 7.957zm-1.32-5.89v-4.987l4.987 2.493-4.987 2.494z"></path></svg>
+      </a>
+    </div>
+
+    <p class="text-gray-400 text-sm">
+      &copy; 2024 Sajjad Siam. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+                                    <! -- JavaScript for Mobile Menu and More Button Toggle -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const dropdownBtn = document.getElementById('dropdown-btn');
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  const dropdownIcon = document.getElementById('dropdown-icon');
+  
+  const moreBtn = document.getElementById('more-btn');
+  const moreMenu = document.getElementById('more-menu');
+  const moreIcon = document.getElementById('more-icon');
+
+  // Toggle the mobile menu
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Toggle the dropdown menu in mobile view
+  dropdownBtn.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+    dropdownIcon.classList.toggle('rotate-180');
+  });
+
+  // Toggle the "More" dropdown for large and mobile screens
+  moreBtn.addEventListener('click', () => {
+    moreMenu.classList.toggle('hidden');
+    moreIcon.classList.toggle('rotate-180');
+  });
+</script>
+
+
+
+
+                                      <! -- JavaScript for Filtering -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterLinks = document.querySelectorAll('.filter-link');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const category = this.getAttribute('data-category');
+
+        // Remove active class from all links and add to the clicked one
+        filterLinks.forEach(link => link.classList.remove('text-yellow-400', 'font-bold'));
+        this.classList.add('text-yellow-400', 'font-bold');
+
+        // Show/Hide portfolio items based on the selected category
+        portfolioItems.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+            item.classList.add('animate-fade');
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+
+  // Optional: Add fade-in effect when filtering
+  document.querySelectorAll('.portfolio-item').forEach(item => {
+    item.classList.add('transition-opacity', 'opacity-0');
+    setTimeout(() => {
+      item.classList.add('opacity-100');
+    }, 100);
+  });
+</script>
+
+
+    
+</body>
+</html>
