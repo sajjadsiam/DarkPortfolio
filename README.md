@@ -40,9 +40,18 @@ To get this project up and running on your local machine:
 
 ## 🖼️ Screenshots
 
-Desktop View | Mobile View
------------- | ------------
-![Desktop View](path/to/desktop-screenshot.png) | ![Mobile View](path/to/mobile-screenshot.png)
+### Desktop View
+![Desktop View](Screenshots/Screenshot%202024-10-17%20045843.png)
+
+### Mobile Views
+| Mobile View 1                                      | Mobile View 2                                      |
+| -------------------------------------------------- | -------------------------------------------------- |
+| ![Mobile View 1](Screenshots/Screenshot%202024-10-17%20050047.png) | ![Mobile View 2](Screenshots/Screenshot%202024-10-17%20050114.png) |
+
+### Additional Screenshots
+| Screenshot 1                                       | Screenshot 2                                       |
+| -------------------------------------------------- | -------------------------------------------------- |
+| ![Screenshot 1](Screenshots/Screenshot%202024-10-17%20045923.png) | ![Screenshot 2](Screenshots/Screenshot%202024-10-17%20045955.png) |
 
 ## ✨ Customization
 
@@ -58,4 +67,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ---
 
-Built with 💻 by [Your Name]
+Built with 💻 by [Sajjad Siam]
