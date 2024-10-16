@@ -21,6 +21,7 @@ Check out the live demo of the portfolio [here](https://demo-dark-portfolio.verc
 - **HTML5**
 - **CSS3** (Flexbox, Grid)
 - **JavaScript**
+-  **Tailwind CSS**
 
 ## 📂 Installation and Setup
 
